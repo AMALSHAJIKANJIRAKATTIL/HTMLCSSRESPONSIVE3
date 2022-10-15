@@ -1,0 +1,52 @@
+.parent-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+   
+}
+.child1{
+    background-color: white;
+    flex:1 0 100%;
+    min-height: 200px;
+    align-items: center;
+    padding: 50px;
+}
+.child2{
+    background-color: #2BB3B1;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 50% ;
+    min-height: 400px;
+    color: white;
+}
+.child3{
+    background-color: #4ABEBD;
+    display: flex;
+    flex-wrap: wrap;
+    flex:1 50%;
+    min-height:400px;
+    color: white;
+}
+
+.child-container{
+    padding: 40px;
+   
+}
+
+@media (max-width: 768px) {
+    .parent-flex {
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center;
+      
+    }
+  
+    .child1 .child2 .child3 {
+       
+      display: block;
+      text-align: center;
+      
+    }
+  }
